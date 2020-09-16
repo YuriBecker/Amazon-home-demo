@@ -31,7 +31,7 @@ export const Search: FC = () => {
           placeholder="All"
           size="sm"
           height="40px"
-          width="70px"
+          width="85px"
           focusBorderColor="#ff9900"
         >
           <option value="option1">Arts & Crafts</option>
