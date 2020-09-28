@@ -11,7 +11,8 @@ import {
 } from '@chakra-ui/core'
 import { Product as ProductType } from '../../../interfaces/Product'
 import { Stars } from './Stars'
-
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 interface Props {
   product: ProductType
 }
@@ -48,7 +49,9 @@ export const Product: FC<Props> = ({ product, product: { imageUrl } }) => {
       minW="400px"
     >
       <Info product={product} />
-      <Image src={imageUrl} objectFit="contain" maxHeight="200px" mt="15px" />
+      <Zoom>
+        <Image src={imageUrl} objectFit="contain" maxHeight="200px" mt="15px" />
+      </Zoom>
       <PseudoBox
         as="button"
         backgroundColor="#f0c14b"
