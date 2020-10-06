@@ -5,8 +5,9 @@ import { allProducts } from '../../data/allProducts'
 
 export const Home: FC = () => {
   return (
-    <Box w="100%" background="#eaeded" mt="10px" mb="25px">
+    <Box mt="3" mb="6">
       <Flex
+        width="100%"
         maxW="1500px"
         justify="center"
         ml="auto"
@@ -20,7 +21,7 @@ export const Home: FC = () => {
           src="https://images-na.ssl-images-amazon.com/images/G/01/videogames/Banner_Digital3._CB1198675309_.jpg"
         />
 
-        <Flex zIndex={1} mx="5px" flexWrap="wrap">
+        <Flex zIndex={1} mx="1" flexWrap="wrap">
           {allProducts.map(product => (
             <Product product={product} key={product.name} />
           ))}

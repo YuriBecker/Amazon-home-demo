@@ -25,7 +25,7 @@ const StyledSelect = styled(Select)`
 
 export const Search: FC = () => {
   return (
-    <InputGroup size="md" flex="1" px={5} minWidth="300px">
+    <InputGroup size="md" flex="1" px={5} minWidth="350px">
       <InputLeftAddon background="#f3f3f3" p={0}>
         <StyledSelect
           placeholder="All"

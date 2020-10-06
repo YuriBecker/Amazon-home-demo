@@ -44,8 +44,8 @@ export const Product: FC<Props> = ({ product, product: { imageUrl } }) => {
       backgroundColor="white"
       flex={1}
       zIndex={1}
-      m="10px"
-      p="20px"
+      m="3"
+      p="5"
       minW="400px"
     >
       <Info product={product} />
