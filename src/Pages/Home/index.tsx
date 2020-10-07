@@ -1,19 +1,12 @@
 import React, { FC } from 'react'
-import { Box, Image, Flex } from '@chakra-ui/core'
+import { Image, Flex } from '@chakra-ui/core'
 import { Product } from './Product'
 import { allProducts } from '../../data/allProducts'
 
 export const Home: FC = () => {
   return (
-    <Box mt="3" mb="6">
-      <Flex
-        width="100%"
-        maxW="1500px"
-        justify="center"
-        ml="auto"
-        mr="auto"
-        direction="column"
-      >
+    <Flex width="100%" justify="center">
+      <Flex maxW="1500px" justify="center" direction="column" mt="4" mb="6">
         <Image
           alt="Home background"
           objectFit="contain"
@@ -27,6 +20,6 @@ export const Home: FC = () => {
           ))}
         </Flex>
       </Flex>
-    </Box>
+    </Flex>
   )
 }

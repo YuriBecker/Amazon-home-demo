@@ -46,7 +46,7 @@ export const Product: FC<Props> = ({ product, product: { imageUrl } }) => {
       zIndex={1}
       m="3"
       p="5"
-      minW="400px"
+      minW={{ base: '300px', sm: '400px' }}
     >
       <Info product={product} />
       <Zoom>

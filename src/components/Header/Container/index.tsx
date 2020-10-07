@@ -8,6 +8,8 @@ export const Container: FC = ({ children }) => {
       minH="60px"
       alignItems="center"
       background="#131921"
+      position="sticky"
+      w="100%"
       top={0}
       zIndex={100}
       px="10px"
