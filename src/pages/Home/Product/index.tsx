@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useContext } from 'react'
 import {
   Flex,
   Heading,
@@ -12,7 +12,9 @@ import {
 import { Product as ProductType } from '../../../interfaces/Product'
 import { Stars } from './Stars'
 import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
+import { IMAGE_FALLBACK_URL } from '../../../constants'
+import { AppContext } from '../../../context'
+import { Types } from '../../../reducers'
 interface Props {
   product: ProductType
 }
@@ -35,7 +37,10 @@ const Info: FC<Props> = ({
   </Stack>
 )
 
-export const Product: FC<Props> = ({ product, product: { imageUrl } }) => {
+export const Product: FC<Props> = ({ product }) => {
+  const { dispatch } = useContext(AppContext)
+  const { imageUrl } = product
+
   return (
     <Flex
       direction="column"
@@ -50,7 +55,13 @@ export const Product: FC<Props> = ({ product, product: { imageUrl } }) => {
     >
       <Info product={product} />
       <Zoom>
-        <Image src={imageUrl} objectFit="contain" maxHeight="200px" mt="15px" />
+        <Image
+          src={imageUrl}
+          objectFit="contain"
+          maxHeight="200px"
+          mt="15px"
+          fallbackSrc={IMAGE_FALLBACK_URL}
+        />
       </Zoom>
       <PseudoBox
         as="button"
@@ -62,6 +73,12 @@ export const Product: FC<Props> = ({ product, product: { imageUrl } }) => {
         padding="0px 5px"
         width="100px"
         _hover={{ bg: '#ff9900' }}
+        onClick={(): void => {
+          dispatch({
+            type: Types.Add,
+            payload: product
+          })
+        }}
       >
         Add to Cart
       </PseudoBox>
