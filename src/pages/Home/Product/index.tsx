@@ -15,6 +15,7 @@ import Zoom from 'react-medium-image-zoom'
 import { IMAGE_FALLBACK_URL } from '../../../constants'
 import { AppContext } from '../../../context'
 import { Types } from '../../../reducers'
+import priceFormatter from '../../../utils/priceFormatter'
 interface Props {
   product: ProductType
 }
@@ -26,7 +27,7 @@ const Info: FC<Props> = ({
     <Heading size="md">{name}</Heading>
     <Text fontSize="sm">By {brand}</Text>
     <Stat>
-      <StatNumber fontSize="md">${price}</StatNumber>
+      <StatNumber fontSize="md">{priceFormatter(price)}</StatNumber>
     </Stat>
     <Flex>
       <Stars num={stars} />
