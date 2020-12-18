@@ -18,15 +18,15 @@ export const NoItems: FC = () => {
         _hover={{ bg: '#ff9900' }}
         border="1px solid"
         mt="5"
-        borderColor="#a88734 #9c7e31 #846a29"
+        borderColor="#a88734"
         padding="0px 5px"
         _focus={{
           border: '1px solid',
-          borderColor: '#a88734 #9c7e31 #846a29'
+          borderColor: '#a88734'
         }}
         _active={{
           border: '1px solid',
-          borderColor: '#a88734 #9c7e31 #846a29',
+          borderColor: '#a88734',
           bg: '#ff9900'
         }}
       >

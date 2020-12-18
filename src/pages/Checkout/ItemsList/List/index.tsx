@@ -62,7 +62,7 @@ export const List: FC = () => {
                 <Text fontSize="18px" color="#007185">
                   {product.name}
                 </Text>
-                <Text fontSize="14px" color="#111111">
+                <Text fontSize="14px" color="black">
                   {` by ${product.brand}`}
                 </Text>
                 <Text fontSize="13px" color="#007185">

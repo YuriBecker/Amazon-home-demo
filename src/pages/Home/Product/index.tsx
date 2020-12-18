@@ -69,8 +69,8 @@ export const Product: FC<Props> = ({ product }) => {
         backgroundColor="#f0c14b"
         border="1px solid"
         mt="10px"
-        borderColor="#a88734 #9c7e31 #846a29"
-        color="#111"
+        borderColor="#a88734"
+        color="black"
         padding="0px 5px"
         width="100px"
         _hover={{ bg: '#ff9900' }}
