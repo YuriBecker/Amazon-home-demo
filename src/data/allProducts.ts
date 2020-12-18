@@ -65,12 +65,13 @@ export const allProducts: Product[] = [
   {
     id: 7,
     name:
-      'AOC CU34G2X 34 Curved Frameless Immersive Gaming Monitor, UltraWide QHD 3440x1440, VA Panel, 1ms 144Hz Freesync, Height Adjustable, 3-Yr Zero Dead Pixels',
-    price: 449.99,
-    imageUrl: 'https://i.ebayimg.com/images/g/fPwAAOSwTvNd8jHx/s-l1600.jpg',
+      'Sceptre 30-inch Curved Gaming Monitor 21:9 2560x1080 Ultra Wide Ultra Slim HDMI DisplayPort up to 200Hz Build-in Speakers, Metal Black (C305B-200UN)',
+    price: 278.99,
+    imageUrl:
+      'https://images-na.ssl-images-amazon.com/images/I/81Wt3h7-V2L._AC_SL1500_.jpg',
     stars: 5,
-    numVotes: 7952,
-    brand: 'AOC'
+    numVotes: 4423,
+    brand: 'Sceptre'
   },
   {
     id: 8,
