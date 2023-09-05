@@ -1,4 +1,4 @@
-# Amazon Clone App
+# Amazon Home Demo
 
 ### Project that clones the product listing interface and shopping cart from Amazon
 
